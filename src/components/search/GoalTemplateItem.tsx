@@ -1,5 +1,5 @@
 import React from "react";
-import { cva, type VariantProps } from "class-variance-authority";
+import { cva } from "class-variance-authority";
 import { cn } from "../utils";
 import {
   CertificationIcon,
@@ -100,7 +100,7 @@ const GoalTemplateItem = React.forwardRef<
                 <>
                   <span>•</span>
                   <div className="flex -space-x-1">
-                    {metadata.userAvatars.map((avatar, i) => (
+                    {metadata.userAvatars.map((_, i) => (
                       <div
                         key={i}
                         className="w-6 h-6 rounded-full border-2 border-white bg-gray-200"
